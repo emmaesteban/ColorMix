@@ -39,6 +39,7 @@
                                 <rect key="frame" x="50" y="623" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="silderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="o9s-sp-SVi"/>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HNe-R8-6qd"/>
                                 </connections>
                             </switch>

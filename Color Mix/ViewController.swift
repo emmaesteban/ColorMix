@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         setColor()
     }
     
+    @IBAction func silderChanged(_ sender: Any) {
+        setColor()
+    }
     func setColor() {
         let red: CGFloat = redSwitch.isOn ? CGFloat(redSlider.value) : 0
         let green: CGFloat = greenSwitch.isOn ? CGFloat(greenSlider.value) : 0

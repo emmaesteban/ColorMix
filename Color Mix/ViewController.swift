@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var colorView: UIView!
     
@@ -29,15 +30,16 @@ class ViewController: UIViewController {
         setColor()
     }
     
-    @IBAction func silderChanged(_ sender: Any) {
+    @IBAction func silderChanged(_ sender: UISlider) {
         setColor()
     }
+    
     func setColor() {
         let red: CGFloat = redSwitch.isOn ? CGFloat(redSlider.value) : 0
         let green: CGFloat = greenSwitch.isOn ? CGFloat(greenSlider.value) : 0
         let blue: CGFloat = blueSwitch.isOn ? CGFloat(blueSlider.value) : 0
-        let color = UIColor(red: red, green: green, blue: blue, alpha: 0.49)
-        colorView.backgroundColor = color
+        let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
+        self.view.backgroundColor = color
     }
 }
 
